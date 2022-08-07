@@ -1,0 +1,9 @@
+:root{
+    --linear-gradiente: hsl(249, 99%, 64%) , hsl(278, 94%, 30%);
+    --red:  hsl(0, 100%, 66%);
+    --branco: hsl(0, 0%, 100%);
+    --branco-acinzetado-violeta: hsl(270, 3%, 87%);
+    --violeta-acinzentado-escuro: hsl(279, 6%, 55%);
+    --violeta-escuro: hsl(278, 68%, 11%);
+    --fonte-principal:'Space Grotesk', sans-serif;
+}

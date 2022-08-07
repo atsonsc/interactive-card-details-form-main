@@ -1,45 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link href="/CSS/styles.css" rel="stylesheet" >
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500&display=swap" rel="stylesheet">
+  <link href="/CSS/normalize.css" rel="stylesheet">
+  <link href="./CSS/reset.css" rel="stylesheet">
+  <link href="/CSS/styles.css" rel="stylesheet">
+
   <title>Interactive card details form</title>
 
- 
+
 </head>
+
 <body>
+  <main class="row">
+    <section class="cards">
+      <div class="card__front">
+        <img src="/images/card-logo.svg" alt="">
+        <span class="card__number">0000 0000 0000 0000</span>
+        <div>
+          <p class="card__name">Atson Conceição</p>
+          <span class="card__date"> 00/00</span>
+        </div>
+      </div>
+      <div class="card__back">
 
-  0000 0000 0000 0000
-  Jane Appleseed
-  00/00
+      </div>
 
-  000
+    </section>
+    <section class="form">
+      <div class="form__container">
+        <form action="" method="post">
+          <label for="name">Cardholder Name</label><br>
+          <input type="text" name="Cardholder Name" placeholder=" E.X. Atson Conceição" id="name">
+          <br><label for="number">Card number</label><br>
+          <input type="number" name="Card number" placeholder="E.X. 1234 5678 9123 0000" id="number">
+          <div>
+            <label for="Date">Exp. Date (MM/YY) </label><br>
+            <input type="text" name="Date" placeholder=" MM" id="date">
+            <input type="text" name="Date" placeholder=" YY" id="date"><br>
+            <label for="CVC">CVC </label>
+            <br><input type="text" name="CVC" placeholder="E.X 123" id="cvc">
+          </div>
 
-  Cardholder Name
-  e.g. Jane Appleseed
+          <input type="submit" name="Confirm" id="confirm">
+        </form>
 
-  Card Number
-  e.g. 1234 5678 9123 0000
+      </div>
 
-  Exp. Date (MM/YY)
-  MM
-  YY
-
-  CVC
-  e.g. 123
-
-  Confirm
-
-  <!-- Completed state start -->
+    </section>
+  </main>
 
   Thank you!
   We've added your card details
   Continue
-  
- 
+<script src="/script.js"></script>
 </body>
+
 </html>

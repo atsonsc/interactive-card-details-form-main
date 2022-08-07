@@ -6,4 +6,130 @@
     --violeta-acinzentado-escuro: hsl(279, 6%, 55%);
     --violeta-escuro: hsl(278, 68%, 11%);
     --fonte-principal:'Space Grotesk', sans-serif;
+
+}
+
+body{
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+}
+
+.row{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.cards{
+    background: url(/images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    width: 40vw;
+}
+.card__front{
+    background: url(/images/bg-card-front.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+   height: 40%;
+    left: 30%;
+    padding: 1rem 1.5rem;
+    position: absolute;
+    top: 10%;
+    width: 60%;
+}
+.card__number{
+    display: block;
+    color: var(--branco);
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+}
+
+.card__name, .card__date{
+    color: var(--branco);
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.card__front div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.card__date{
+    display: block;
+   
+}
+.card__back{
+    background: url(/images/bg-card-back.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    bottom: 5%;
+    height: 40%;
+    padding: 1rem 1.5rem;
+    position: absolute;
+    left: 40%;
+    width: 60%;
+}
+.form{
+    align-items: center;
+    background-color: var(--branco);
+  
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 60vw;
+}
+.form__container{
+    background-color: #f2f2f2;
+    box-shadow: 10px 10px 8px #888888;
+    border-radius: 8px;
+    height: 50vh;
+    padding: 1.5rem;
+    position: absolute;
+    right: 15%;
+    width: 30vw;
+}
+label{
+    color: var(--violeta-escuro);
+    margin-bottom: 10px;
+}
+input {
+    border: 1px solid var(--branco-acinzetado-violeta);
+    border-radius: 8px;
+    margin-bottom: .8rem;
+    padding: .8rem 0;
+    width: 100%;
+}
+
+input::-webkit-input-placeholder{
+  
+    margin-right: 1rem;
+}
+
+#date{
+    width: 20%;
+    margin-right: 1.2rem;
+}
+#cvc{
+ 
+    width: 40%;
+}
+#confirm{
+    border-radius: 8px;
+    color: var(--branco);
+    background:var(--violeta-escuro);
+    border: none;
+    margin-top: 1.5rem;
+    padding: .8rem 0;
+    text-transform: uppercase;
+    width: 100%;
+
+}
+form div{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    
 }

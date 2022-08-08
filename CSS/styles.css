@@ -31,7 +31,7 @@ body{
     background: url(/images/bg-card-front.png);
     background-repeat: no-repeat;
     background-size: contain;
-   height: 40%;
+    height: 40%;
     left: 30%;
     padding: 1rem 1.5rem;
     position: absolute;
@@ -109,7 +109,7 @@ input::-webkit-input-placeholder{
 }
 
 #date{
-    width: 20%;
+    width: 40%;
     margin-right: 1.2rem;
 }
 #cvc{
@@ -132,4 +132,90 @@ form div{
     display: flex;
     justify-content: space-around;
     
+}
+
+@media screen and (max-width: 600px) {
+    
+
+
+.row{
+    flex-direction: column;
+    position: relative;
+}
+
+.cards{
+    background: url(/images/bg-main-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 40vh;
+}
+
+.card__front{
+
+    height: 50%;
+    left: 5%;
+    position: absolute;
+    top: 55%;
+    width: 70%;
+    z-index: 1;
+
+}
+
+.card__number{
+    font-size: 1.4rem;
+}
+
+.card__front div{
+    margin-top: 0;
+}
+
+.card__name, .card__date{
+    font-size: 1.2rem;
+    
+}
+
+.card__back{
+    top: 20%;
+    position: absolute;
+    left: 10%;
+
+    height: 50%;
+    width: 70%;
+}
+
+
+
+.form{
+    
+    height: 60vh;
+    width: 100vw;
+}
+
+.form__container{
+    box-shadow: none;
+    position: static;
+    height: 60vh;
+    width: 100vw;
+    padding: 4rem 1.5rem;
+    margin-top: 96px;
+}
+
+label{
+    font-size: 1.2rem;
+    
+}
+ form input{
+    margin-top: .7rem;
+    padding: 1.5rem 0;
+}
+
+form input::placeholder{
+    color: var(--branco-acinzetado-violeta);
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+#confirm{
+    padding: 1.5rem 0;
+}
 }

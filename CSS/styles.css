@@ -72,6 +72,17 @@ body{
     left: 40%;
     width: 60%;
 }
+#cdg{
+   
+    bottom: 48%;
+    color: var(--branco);
+    display: block;
+    font-size: 1.2rem;
+    left: 65%;
+    position: inherit;
+   
+  
+}
 .form{
     align-items: center;
     background-color: var(--branco);
@@ -103,10 +114,11 @@ input {
     width: 100%;
 }
 
-input::-webkit-input-placeholder{
+input::placeholder{
   
-    margin-right: 1rem;
+    padding: 0 1rem;
 }
+
 
 #date{
     width: 40%;
@@ -183,6 +195,8 @@ form div{
     height: 50%;
     width: 70%;
 }
+
+
 
 
 

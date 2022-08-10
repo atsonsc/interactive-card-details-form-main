@@ -23,14 +23,17 @@
   <main class="row">
     <section class="cards">
       <div class="card__front">
-        <img src="/images/card-logo.svg" alt="">
-        <span class="card__number">0000 0000 0000 0000</span>
+        <img src="/images/card-logo.svg" alt="Logotipo do cartão">
+        <span class="card__number" id="card__number">0000 0000 0000 0000</span>
         <div>
-          <p class="card__name">Atson Conceição</p>
-          <span class="card__date"> 00/00</span>
+          <p class="card__name" id="card__name">Atson Conceição</p>
+          <span class="card__date" id="card__date"> 00/00</span>
         </div>
       </div>
       <div class="card__back">
+        
+          <span id="cdg">000</span>
+        
 
       </div>
 
@@ -39,15 +42,15 @@
       <div class="form__container">
         <form action="" method="post">
           <label for="name">Cardholder Name</label><br>
-          <input type="text" name="Cardholder Name" placeholder=" E.X. Atson Conceição" id="name">
+          <input type="text" name="Cardholder Name" placeholder=" E.X. Atson Conceição" id="name" required oninput="change()">
           <br><label for="number">Card number</label><br>
-          <input type="number" name="Card number" placeholder="E.X. 1234 5678 9123 0000" id="number">
+          <input type="text" name="Card number" placeholder="E.X. 1234 5678 9123 0000" id="number" required oninput="changeNumber()">
           <div>
             <label for="Date">Exp. Date (MM/YY) </label><br>
-            <input type="text" name="Date" placeholder=" MM/AA" id="date">
+            <input type="text" name="Date" placeholder=" MM/AA" id="date" required oninput="changeDate()">
            
             <label for="CVC">CVC </label>
-            <br><input type="text" name="CVC" placeholder="123" id="cvc">
+            <br><input type="text" name="CVC" placeholder="123" id="cvc" required oninput="changeCvc()">
           </div>
 
           <input type="submit" name="Confirm" id="confirm">
